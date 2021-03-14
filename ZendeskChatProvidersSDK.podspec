@@ -20,9 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.swift_version = '5.3'
   s.cocoapods_version = '>= 1.9.3'
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.source       = { :git => "https://github.com/zendesk/chat_providers_sdk_ios.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/mtr1012/chat_providers_sdk_ios.git", :tag => s.version }
   s.vendored_frameworks = 'ChatProvidersSDK.xcframework'
   s.preserve_paths = 'ChatProvidersSDK.xcframework', 'ChatProvidersSDK.dSYMs/*.dSYM'
 end
